@@ -1,0 +1,60 @@
+/* CSS lección _ Sintaxis */
+body{
+    background-color: lightblue;
+}
+h1{
+    font-family: openDyslexic;
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: OpenDyslexic;
+    color: white;
+    font-size: 20 px;
+}
+
+#cssSintaxis {
+    display: flex;
+    justify-content: space-around;
+    margin: 45%;
+}
+
+
+/* CSS flexbox1 _ froggy */
+.parent {
+    display: flex;
+    height: 300px; /* Or whatever */
+    }
+
+    .child {
+    width: 300px;  /* Or whatever */
+
+    height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
+    }
+    
+.candy{
+    background: #c0870d;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content:flex-end;
+  }
+
+
+/* CSS grid1 _ gridgarden */
+
+#garden {
+    background-color: blue;
+    color: chocolate;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+
+  #water {
+    background-color: cyan;
+    color: darkgreen;
+    grid-column-start: 3;
+
+  }

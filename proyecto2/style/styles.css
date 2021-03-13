@@ -1,0 +1,26 @@
+
+h1, h2, h3{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content:center;
+}
+h2 {
+  background-color:rgb(55, 59, 62);
+  color: white;
+}
+h3 {
+  text-shadow: rgb(55, 59, 62);
+  font-size:medium;
+}
+.escudo{
+  width: 50px;
+}
+.body {
+  background-color: rgb(55, 59, 62);
+}
+.resultadodatos {
+  text-align: center;
+}
