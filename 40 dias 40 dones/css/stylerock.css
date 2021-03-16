@@ -1,0 +1,31 @@
+/* CSS lección _ Selector */
+/* CSS lección _ add CSS */
+/* CSS lección _ comment */
+
+/* CSS lección _ Selector */
+
+
+
+
+p {
+text-align: center;
+    color: red;
+} 
+
+#para2 {
+text-align: center;
+    color: rgb(130, 255, 146);
+}
+
+p.center {
+text-align: center;
+    color: red;
+}
+                        /* aplica de los p los que tenga claase large se aplican las 2 condiciones que sea p y large*/
+p.large {
+    font-size: 300%;
+}   
+                        /* este signo aplica a toda la pantalla el estilo da igual el tipo de texto u imagen u elemento la aplica */
+* {
+ background-color: pink;
+}
