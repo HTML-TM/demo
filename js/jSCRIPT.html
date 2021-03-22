@@ -171,6 +171,7 @@
 <img id="i" src="/js/si.jpg" style="width: 100px;">
 <button onclick="document.getElementById('i').src='/js/ej2/aa.jpg'">flexiones</button></br>
 
+
 <!-- iniciar flexiones JavaScript -->
 
 <button onclick="document.getElementById('m').src='/js/flexion.png'">iniciar</button>
@@ -205,6 +206,10 @@
 <img id="v" src="iniciar.jpg" style="width: 100px;">
 <button onclick="document.getElementById('v').src='/js/iniciar.jpg'">8ª flexion</button></br>
 
+<button onclick="document.getElementById('w').src='/js/flexion.png'">iniciar</button>
+<img id="w" src="/js/iniciar.jpg" style=" width:100px">
+<button onclick="document.getElementById('w').src='/js/iniciar.jpg'">10 flexiones</button>
+
 <hr>
 </br>
 <p>ejercicios de repaso</p>
@@ -230,20 +235,144 @@
 
 <button onclick="document.getElementById('elbolsillo').style.fontSize='25px'">Presiona aqui!</button>
 
+<hr>
 <!-- JavaScript lección _ esconder y mostrar información  JavaScript -->
-
+<hr>
 <p id="esconder">javascript es util para esconder informacion de HTML </p>
 <button type="button" onclick="document.getElementById('esconder').style.display='none'">Presiona Aquí!
 </button>
-
+<hr>
 <p id="mostrarResultado"> javascript puede mostrar informacion escondida previamente </p>
 <button type="button" onclick="document.getElementById('mostrarResultado').style.display='block'"> Presiona Aqui </button>
-
+<hr>
 <p id="escondert">JavaScript can hide HTML elements.</p>
-
+<hr>
 <button type="button" onclick="document.getElementById('escondert').style.display='none'">Click Me!</button>
+<hr>
+<!-- JavaScript lección _ donde Colocar mi JavaScript -->
+<h2>JavaScript en el Cabecero</h2>
+
+<!-- JavaScript En el cabecero -->
+<!--
+<p id="kemo">Un texto</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+    function myFunction() {
+      document.getElementById("kemo").innerHTML = "Paragraph changed.";
+    }
+    </script>
+-->
+
+<!--
+    <!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html> 
+
+-->
 
 
+<!-- Javascript en el cuerpo -->
+<h2>JavaScript in Body</h2>
 
+<p id="enrredo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("enrredo").innerHTML = "Paragraph changed.";
+}
+</script>
+
+<!-- JavaSript interno Body-->
+<!-- 
+    <html>
+<body>
+    -->
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<!-- 
+</body>
+</html> 
+
+-->
+<!-- JavaSript Externo Archivo-->
+<!-- 
+    <html>
+<body>
+    -->
+<h2>External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+<!-- 
+</body>
+</html> 
+
+-->
+<!-- Javascript externo web -->
+
+<h2>External JavaScript</h2>
+
+<p id="url">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+
+<script src="https://www.w3schools.com/js/myScript.js"></script>
+<!-- 
+</body>
+</html> 
+
+-->
+<!-- Javascript externa carpeta -->
+<h2> Carpeta Externa JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+
+<script src="/js/myScript.js"></script>
+<!-- 
+</body>
+</html> 
+
+-->
 </body>
 </html>
