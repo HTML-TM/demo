@@ -267,12 +267,12 @@
     
     </body> -->
 <script>
-    function myFunction(){
+    function aa(){
         document.getElementById("aa").innerHTML = "y lo invité a que subiera a lomos de mi caballo."
     }
 </script>
 <p id="aa">Me lo encontré por el camino y nos hicimos hermanos </p>
-<button type="button" onclick="myFunction()">Canta Camarón!</button>
+<button type="button" onclick="aa()">Canta Camarón!</button>
 
 
 
@@ -280,18 +280,45 @@
 <h1>JavaScript en el body</h1>
 
 
+<!-- JavaScript lección _ JavaScript en un archivo externo de JavaScript -->
+<h1>JavaScript en el archivo externo</h1>
+
+    <h2>Externo JavaScript</h2>
+    
+    <p id="ab">A Paragraph.</p>
+    
+    <button type="button" onclick="ab('ab')">presiona aquí</button>
+    
+    <p>(myFunction está guardado en un archivo llamado script.js "script.js")</p>
+    
+    <script src="script.js"></script>
+    
+
+<!-- JavaScript lección _ JavaScript desde url JavaScript -->
+
+<h2>URL Externo JavaScript</h2>
+
+<p id="ac">Tecnica de transformacion via URL</p>
+
+<button type="button" onclick="ac()">Fuera</button>
+
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+
+<script src="https://www.w3schools.com/js/myScript.js"></script>
+
+<!-- JavaScript lección _ JavaScript desde Carpeta JavaScript -->
+
+<h2>Carpeta Externa JavaScript</h2>
+
+<p id="ad">A Paragraph.</p>
+
+<button type="button" onclick="ad()">Presiona aquí</button>
+
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+
+<script src="/js/myScript.js"></script>
 
 
-
-
-
-
-
-
-
-
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
