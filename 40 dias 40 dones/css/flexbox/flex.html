@@ -7,14 +7,39 @@
     <link href="/40 dias 40 dones/css/flexbox/flex.css" type="stylesheet">
     <link rel="shortcut icon" type="image/ico" href="/40 dias 40 dones/img/caterpie.ico"/>
     <title>Flexbox Lesson</title>
+    <style>
+        .flex-container {
+          display: flex;
+          flex-wrap: nowrap;
+          background-color: rgb(0, 0, 0);
+        }
+        
+        .flex-container > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        </style>
 </head>
 <body>
     <h1>Cual es la utilidad de FlexBox?</h1>
     <p>es un procedimiento de posicionamiento de objetos/elementos en pantalla</p>
-<div class="padre">Manuel</div>
-    <div class="hijo">Yaiza</div>
-    <div class="hijo">Tairo</div>
-    <div class="hijo">Aimara</div>
-    <div class="hijo">Shelton</div>
+
+    <h1>Flexible Boxes</h1>
+
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>  
+      <div>7</div>
+      <div>8</div>
+    </div>
+    
 </body>
 </html>
