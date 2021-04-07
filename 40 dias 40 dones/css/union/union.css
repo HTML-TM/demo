@@ -1,0 +1,67 @@
+
+
+
+/*Css Grid _ Parent and Child*/
+/*Css flexbox _ Space Elements*/
+
+.grid-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #204868;
+    padding: 10px;
+}
+.grid-element {
+    background-color: rgba(248, 248, 248, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-left {
+    text-align: left;
+
+}
+
+.flex-center {
+    text-align: center;
+
+}
+
+.flex-right {
+    text-align: right;
+
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .tabcontent #logo {margin:-25px;}
+  
+  #home {background-color:rgb(10, 0, 191);}
+  #conocenos {background-color:rgb(44, 32, 255);}
+  #contacto {background-color:rgb(154, 149, 255);}
+  #info {background-color:rgb(44, 32, 255);}
+  #form {background-color: rgb(10, 0, 191);}
+  #logo {width: 200px}

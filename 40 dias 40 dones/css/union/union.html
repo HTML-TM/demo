@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/union/union.css">
+    <link rel="shortcut icon" type="image/icon" href="/img/caterpie.ico">
+    <title>union Grid y flexbox</title>
+</head>
+<body>
+<!-- CSS lección _ Fusión -->
+<h3>Fusión</h3>
+<div class="grid-box">
+    <div class="grid-element"><div class="flex-left">1</div></div>
+    <div class="grid-element"><div class="flex-center">2</div></div>
+    <div class="grid-element"><div class="flex-right">3</div></div>
+    <div class="grid-element"><div class="flex-left">4</div></div>
+    <div class="grid-element"><div class="flex-center">5</div></div>
+    <div class="grid-element"><div class="flex-right">6</div></div>
+</div>
+
+<div id="home" class="tabcontent">
+    <h1><img src="/img/Logotipográfico.png" id="logo"></h1>
+    <p>Achieve your goal in life.</p>
+  </div>
+  
+  <div id="conocenos" class="tabcontent">
+    <h1>About us</h1>
+    <p>Do you want to learn the technologies and methodologies necessary to make a web application complete?</p> 
+  </div>
+  
+  <div id="contacto" class="tabcontent">
+    <h1>Contact</h1>
+    <p>For any questions or information about the courses, contact us!</p>
+  </div>
+  
+  <div id="info" class="tabcontent">
+    <h1>Info</h1>
+    <p>We have the best time-table for you.</p>
+  </div>
+  <div id="form" class="tabcontent">
+    <h1>Form</h1>
+    <p>We glad to introduce to you in this computer world.</p>
+  </div>
+  <button class="tablink" onclick="openCity('home', this, 'black')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openCity('conocenos', this, 'black')">About us</button>
+  <button class="tablink" onclick="openCity('contacto', this, 'black')">Contact</button>
+  <button class="tablink" onclick="openCity('info', this, 'black')">Info</button>
+  <button class="tablink" onclick="openCity('form', this, 'black')">Form</button> 
+<script src="union.js"></script>
+</body>
+</html>
