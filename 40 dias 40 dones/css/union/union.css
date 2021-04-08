@@ -58,10 +58,12 @@
   }
 
   .tabcontent #logo {margin:-25px;}
+
+
   
-  #home {background-color:rgb(10, 0, 191);}
-  #conocenos {background-color:rgb(44, 32, 255);}
-  #contacto {background-color:rgb(154, 149, 255);}
-  #info {background-color:rgb(44, 32, 255);}
-  #form {background-color: rgb(10, 0, 191);}
+  #home {background-color:rgb(10, 0, 190);}
+  #conocenos {background-color:rgb(10, 0, 190);}
+  #contacto {background-color:rgb(10, 0, 190);}
+  #info {background-color:rgb(10, 0, 190);}
+  #form {background-color: rgb(10, 0, 190);}
   #logo {width: 200px}
