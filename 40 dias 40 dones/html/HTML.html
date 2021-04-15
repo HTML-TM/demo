@@ -685,7 +685,7 @@ background image behaves.
 </div>
 
 <p>A background image for a p element:</p>
-<div style="background-image: url('https://th.bing.com/th/id/OIP.JjyKSQvqU3hZ2uA0-BAWnQHaEK?pid=ImgDet&rs=1');color:rgb(240, 240, 240)">
+<p style="background-image: url('https://th.bing.com/th/id/OIP.JjyKSQvqU3hZ2uA0-BAWnQHaEK?pid=ImgDet&rs=1');color:rgb(240, 240, 240)">
 You can specify background images<br>
 for any visible HTML element.<br>
 In this example, the background image<br>
@@ -697,7 +697,7 @@ where it is specified. (Try resizing the<br>
 browser window to see how the<br>
 background image behaves.
 </p>
-
+</p>
 <h2>tambien se puede escribir desde el head  </h2>
 <p></p>
 <!-- 
@@ -713,6 +713,7 @@ background image behaves.
 <style>
   body {
     background-image: url('https://wallpapercave.com/wp/G2dIPks.jpg');
+
   }
   </style>
 <p> Para evitar que la imagen de fondo se repita, establezca la propiedad en .background-repeatno-repeat</p>
@@ -957,13 +958,16 @@ rowspan="2"
   <dt>Milk</dt>
   <dd>- white cold drink</dd>
 </dl>
+<dt>
 <p><ul>	Defines an unordered list</ul></p>
 <p><ol>	Defines an ordered list</p>
 <p><li>	Defines a list item</p>
 <p><dl>	Defines a description list</p>
 <p><dt>	Defines a term in a description list</p>
 <p><dd>	Describes the term in a description list</dd></p></ul>
+</dt>
 
+<hr>
 
 <!-- HTML Block and Inline Elements _ lesson HTML -->
 <hj3>HTML Block and Inline Elements</hj3>
@@ -1014,5 +1018,43 @@ rowspan="2"
   <p>The <span> element is an inline container used to mark up a part of a text, or a part of a document</p>
   <p></p>
   <p></p>
+
+  <h3>HTML class Atribute</h3>
+  <p>The HTML class attribute is used to specify a class for an HTML element.<br>
+
+    Multiple HTML elements can share the same class.</p>
+  <h3>Using The class Attribute</h3>
+  <p> 
+    The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.<br>
+    In the following example we have three <div> elements with a class attribute with the value of "city". All of the three <div> elements will be styled equally according to the .city style definition in the head section:<br>
+      Example<br>
+      <style>
+        .city {
+          background-color: tomato;
+          color: white;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+        }
+        </style>
+        <div class="city">
+          <h2>Spain</h2>
+          <p>Madrid is the capital of Spain.</p>
+        </div>
+        
+        <div class="city">
+          <h2>Caravaggio</h2>
+          <p>The reason of his name is her mother, how call him this way efusevely:His name</p>
+        </div>
+        
+        <div class="city">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+   <br>
+   <br>
+   <br>
+   <br>
+  </p>
 </body>
 </html>
