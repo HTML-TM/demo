@@ -62,6 +62,44 @@
 <p>Git creates a hidden folder to keep track of changes.</p>
 <p>Initialize Git on the current folder:</p>
 <p>git init</p>
+<h3>Git New Files</h3>
+<h4>Git Adding New Files</h4>
+<p>You just created your first local Git repo. But it is empty.</p>
+<p>So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created.</p>
+<p>If you want to learn how to create a new file using a text editor, you can visit our HTML tutorial:
+    HTML Editors</p>
+<p>For this example, I am going to use a simple HTML file like this:</p>
+<p>And save it to our new folder as index.html.</p>
+<p>Let's go back to the terminal and list the files in our current working directory:</p>
+<p>ls
+    index.html</p>
+<p>ls will list the files in the directory. We can see that index.html is there.</p>
+<p>Then we check the Git status and see if it is a part of our repo:</p>
+<p>git status
+    On branch master
+    
+    No commits yet
+    
+    Untracked files:
+      (use "git add ..." to include in what will be committed)
+        index.html
+    
+    nothing added to commit but untracked files present (use "git add" to track)</p>
+<p>Now Git is aware of the file, but has not added it to our repository!</p>
+<p>Files in your Git repository folder can be in one of 2 states:</p>
+<p>Tracked - files that Git knows about and are added to the repository</p>
+<p>Untracked - files that are in your working directory, but not added to the repository</p>
+<p> When you first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage them, or add them to the staging environment.</p>
+<p>We will cover the staging environment in the next chapter.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 <p></p>
 <p></p>
 <p></p>
