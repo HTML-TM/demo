@@ -62,6 +62,7 @@
 <p>Git creates a hidden folder to keep track of changes.</p>
 <p>Initialize Git on the current folder:</p>
 <p>git init</p>
+<!-- <h3>Git New Files</h3> -->
 <h3>Git New Files</h3>
 <h4>Git Adding New Files</h4>
 <p>You just created your first local Git repo. But it is empty.</p>
@@ -91,23 +92,81 @@
 <p>Untracked - files that are in your working directory, but not added to the repository</p>
 <p> When you first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage them, or add them to the staging environment.</p>
 <p>We will cover the staging environment in the next chapter.</p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+
+<h3>Git Staging Environment</h3>
+<h3>Git Staging Environment</h3>
+<p>One of the core functions of Git is the concepts of the Staging Environment, and the Commit.</p>
+<p>As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.</p>
+<p>Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.</p>
+<p>For now, we are done working with index.html. So we can add it to the Staging Environment:</p>
+<p>example:</p>
+<p>git add index.html</p>
+<p>The file should be Staged. Let's check the status::</p>
+<p>Example</p>
+<p>git status
+    On branch master
+    
+    No commits yet
+    
+    Changes to be committed:
+      (use "git rm --cached ..." to unstage)
+        new file: index.htmlgit status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached ..." to unstage)
+    new file: index.html</p>
+<p>Now the file has been added to the Staging Environment.</p>
+<h3>Git Add More than One File</h3>
+<p>You can also stage more than one file at a time. Let's add 2 more files to our working folder. Use the text editor again.</p>
+<p>A README.md file that describes the repository (recommended for all repositories):</p>
+<p><b> Example </b>  </p>
+<p># hello-world
+    Hello World repository for Git tutorial
+    This is an example repository for the Git tutoial on https://www.w3schools.com
+    
+    This repository is built step by step in the tutorial.</p>
+<p>A basic external style sheet (bluestyle.css):</p>
+<p>Example
+    body {
+    background-color: lightblue;
+    }
+    
+    h1 {
+    color: navy;
+    margin-left: 20px;
+    }</p>
+<p>And update index.html to include the stylesheet:</p>
+<p>Example: index.html
+<p>Now add all files in the current directory to the Staging Environment:</p>
+<p><b>git add --all  </b>  </p>
+<p><b>  </b>Using --all instead of individual filenames will stage all changes (new, modified, and deleted) files.  </p>
+<p><b> Example </b>  </p>
+<p><b>  </b> git status
+    On branch master
+    
+    No commits yet
+    
+    Changes to be committed:
+      (use "git rm --cached ..." to unstage)
+            new file:   README.md
+            new file:   bluestyle.css
+            new file:   index.html </p>
+
+<p><b>  </b> Now all 3 files are added to the Staging Environment, and we are ready to do our first commit. </p>
+<p><b>  Note: The shorthand command for git add --all is git add -A</b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
 <p><b>  </b>  </p>
 <p><b>  </b>  </p>
 
