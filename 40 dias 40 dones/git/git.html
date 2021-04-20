@@ -62,18 +62,18 @@
 <p>Git creates a hidden folder to keep track of changes.</p>
 <p>Initialize Git on the current folder:</p>
 <p>git init</p>
+
 <!-- <h3>Git New Files</h3> -->
+
 <h3>Git New Files</h3>
 <h4>Git Adding New Files</h4>
 <p>You just created your first local Git repo. But it is empty.</p>
 <p>So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created.</p>
-<p>If you want to learn how to create a new file using a text editor, you can visit our HTML tutorial:
-    HTML Editors</p>
+<p>If you want to learn how to create a new file using a text editor, you can visit our HTML tutorial: HTML Editors</p>
 <p>For this example, I am going to use a simple HTML file like this:</p>
 <p>And save it to our new folder as index.html.</p>
 <p>Let's go back to the terminal and list the files in our current working directory:</p>
-<p>ls
-    index.html</p>
+<p>ls index.html</p>
 <p>ls will list the files in the directory. We can see that index.html is there.</p>
 <p>Then we check the Git status and see if it is a part of our repo:</p>
 <p>git status
@@ -93,7 +93,9 @@
 <p> When you first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage them, or add them to the staging environment.</p>
 <p>We will cover the staging environment in the next chapter.</p>
 
-<h3>Git Staging Environment</h3>
+
+<!-- Git Staging environment -->
+
 <h3>Git Staging Environment</h3>
 <p>One of the core functions of Git is the concepts of the Staging Environment, and the Commit.</p>
 <p>As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, you should add the files to a Staging Environment.</p>
@@ -157,6 +159,66 @@ Changes to be committed:
 
 <p><b>  </b> Now all 3 files are added to the Staging Environment, and we are ready to do our first commit. </p>
 <p><b>  Note: The shorthand command for git add --all is git add -A</b>  </p>
+<p><b> Git Commit </b>  </p>
+<p><b>  </b> Since we have finished our work, we are ready move from stage to commit for our repo. </p>
+<p><b>  </b> Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change. </p>
+<p><b>  </b> When we commit, we should always include a message. </p>
+<p><b>  </b> By adding clear messages to each commit, it is easy for yourself (and others) to see what has changed and when. </p>
+<p><b> Example </b>  </p>
+<p><b>  </b> 
+    git commit -m "First release of Hello World!" </br>
+    [master (root-commit) 221ec6e] First release of Hello World!</br>
+     3 files changed, 26 insertions(+)</br>
+     create mode 100644 README.md</br>
+     create mode 100644 bluestyle.css</br>
+     create mode 100644 index.html </p>
+<p><b>  </b> The commit command performs a commit, and the -m "message" adds a message. </p>
+<p><b>  </b> The Staging Environment has been committed to our repo, with the message:
+    </p>
+<p><b>  </b>  "First release of Hello World!" </p>
+<p><b> Git Commit without Stage </b>  </p>
+<p><b>  </b> Sometimes, when you make small changes, using the staging environment seems like a waste of time. It is possible to commit changes directly, skipping the staging environment. The -a option will automatically stage every changed, already tracked file. </p>
+<p><b>  </b> Let's add a small update to index.html: </p>
+<p><b>  </b>  </p>
+<p><b>Example  </b>  </p>
+<p><b>  </b> And check the status of our repository. But this time, we will use the --short option to see the changes in a more compact way: </p>
+<p><b> Example </b>  </p>
+<p><b>git status --short
+    M index.html  </b>  </p>
+<p><b>Note: Short status flags are:  </b>  </p>
+<p><b> ?? - Untracked files</br>
+    A - Files added to stage</br>
+    M - Modified files</br>
+    D - Deleted files </b>  </p>
+<p><b>  </b>We see the file we expected is modified. So let's commit it directly:  </p>
+<p><b>  </b>git commit -a -m "Updated index.html with a new line"</br>
+    [master 09f4acd] Updated index.html with a new line</br>
+     1 file changed, 1 insertion(+)  </br></p>
+<p><b>Warning: Skipping the Staging Environment is not generally recommended.  </b>  </p>
+<p><b> Skipping the stage step can sometimes make you include unwanted changes.</b>  </p>
+<p><b>  </b>  </p>
+<p><b> Git Commit Log </b>  </p>
+<p><b>  </b> To view the history of commits for a repository, you can use the log command: </p>
+<p><b>  </b> 
+    git log</br>
+    commit 09f4acd3f8836b7f6fc44ad9e012f82faf861803 (HEAD -> master)</br>
+    Author: tairo-test </br>
+    Date:   Fri Mar 26 09:35:54 2021 +0100</br>
+    
+        Updated index.html with a new line</br>
+    
+    commit 221ec6e10aeedbfd02b85264087cd9adc18e4b26</br>
+    Author: tairo-test </br>
+    Date:   Fri Mar 26 09:13:07 2021 +0100</br>
+    
+        First release of Hello World! </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
+<p><b>  </b>  </p>
 <p><b>  </b>  </p>
 <p><b>  </b>  </p>
 <p><b>  </b>  </p>
