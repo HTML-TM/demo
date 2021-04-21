@@ -80,3 +80,114 @@ h1 {
   border: 5px solid gray;
   margin: 0;
 }
+#outLineLesson1 {
+  border:2px solid rgb(18, 255, 109);
+  outline:orangered solid 10px;
+  outline-color: orchid;
+  outline-offset: 3px;
+  outline: dashed;
+  margin: auto;
+  padding: 27px;
+  text-align:center;
+
+}
+#outLinedotted {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: dotted red;
+  margin: auto;
+  padding: 32px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLinedashed {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: dashed red;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLinesolid {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: solid red;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLinedouble {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: double red;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLinegroove {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: groove rgb(153, 56, 0) 6px;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLineridge {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 2px;
+  outline: inset rgb(153, 56, 0) 6px;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLineinset {
+  border:3px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: inset rgb(153, 56, 0) 6px;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLineoutset {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: outset red 6px;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLinenone {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: none red;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
+#outLinehidden {
+  border:2px solid rgb(18, 255, 109);
+  outline-offset: 3px;
+  outline: hidden red 10px;
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+  color: paleturquoise;
+
+}
