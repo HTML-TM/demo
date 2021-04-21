@@ -9,7 +9,7 @@ h1{
 }
 p {
     font-family: OpenDyslexic;
-    font-size: 20 px;
+    font-size: 30 px;
 }
 
 #cssSintaxis {
@@ -22,14 +22,14 @@ p {
 /* CSS flexbox1 _ froggy */
 .parent {
     display: flex;
-    height: 300px; /* Or whatever */
+    height: 300px; 
     }
 
     .child {
-    width: 300px;  /* Or whatever */
+    width: 300px; 
 
-    height: 100px; /* Or whatever */
-    margin: auto;  /* Magic! */
+    height: 100px; 
+    margin: auto;  
     }
     
 .candy{
@@ -44,7 +44,7 @@ p {
 /* CSS grid1 _ gridgarden */
 
 #garden {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     color: chocolate;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -52,7 +52,7 @@ p {
   }
 
   #water {
-    background-color: cyan;
+    background-color: rgb(0, 0, 0);
     color: darkgreen;
     grid-column-start: 3;
 
@@ -64,7 +64,19 @@ body {
   background-color: lightblue;
 }
 h1 {
-  color:darkslategray; /* CSS Leccion _ Comment in CSS */
+  color:rgb(255, 255, 255); /* CSS Leccion _ Comment in CSS */
   margin-left: 20px;
 }
 /* CSS Leccion _ Comment in CSS */
+.box_model_class {
+  width: 300px;
+  border: 15px solid orangered;
+  padding: 50px;
+  margin: 20px;
+}
+#id_element {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}

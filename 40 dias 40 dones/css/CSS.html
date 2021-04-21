@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" type="image/ico" href="/40 dias 40 dones/img/caterpie.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="/img/caterpie.ico">
     <title>CSS Lección _ Home</title>
     <style>
         body{
@@ -74,7 +74,7 @@
     <h4>- basado en el elemento nombre "name"</h4>
     <a href="/css/style.css" name="css">lo hare desde el css</a>
 </ul>
-<p class="loshuerfanos"> STAY HARD! </p>
+<p class="loshuerfanos"> STAY HARD!</p>
 
 
 <!-- CSS lección _ How to -->
@@ -232,13 +232,14 @@ div.third {
     p {
     color:white;
       background-image: url("https://cdn.pixabay.com/photo/2015/03/26/09/59/purple-690724_960_720.jpg");
+      background-repeat: no-repeat;
     }
     </style>
 
     <style>
       body {
   background-image: url("https://cdn.pixabay.com/photo/2015/03/26/09/59/purple-690724_960_720.jpg");
-
+        background-repeat: no-repeat;
 }
 </style>
     </style>
@@ -249,7 +250,7 @@ div.third {
 <style>
   p {
   background-image: url("https://cdn.pixabay.com/photo/2015/03/26/09/59/purple-690724_960_720.jpg");
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
 }
 </style>
 <!-- CSS lección _ borders CSS -->
@@ -285,33 +286,28 @@ div.third {
 <p>The display property specifies if/how an element is displayed.</p>
 <p>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.</p>
 <p>Click to show panel</p>
-<p>This panel contains a <div> element, which is hidden by default (display: none).
+<p>This panel contains a 
+
+  <div style="color: silver"> element, which is hidden by default (display: none).
 
   It is styled with CSS, and we use JavaScript to show it (change it to (display: block).</p>
 
   Block-level Elements
   A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
 
-The <div> element is a block-level element.
+The  element is a block-level element.
 Examples of block-level elements:
+</div>
 
-<div>
-<h1> - <h6>
 <p>
-<form>
-<header>
-<footer>
-<section>
 Inline Elements
 An inline element does not start on a new line and only takes up as much width as necessary.
 
-This is an inline <span> element inside a paragraph.
+This is an inline element inside a paragraph.
 
 Examples of inline elements:
+</p>
 
-<span>
-<a>
-<img>
 Display: none;
 display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
 
@@ -322,7 +318,7 @@ As mentioned, every element has a default display value. However, you can overri
 
 Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.
 
-A common example is making inline <li> elements for horizontal menus:
+A common example is making inline elements for horizontal menus:
 
 Example
 li {
@@ -376,5 +372,43 @@ This example demonstrates display: none; versus visibility: hidden;
 Using CSS together with JavaScript to show content
 This example demonstrates how to use CSS and JavaScript to show an element on click.
 </p>
+
+<!-- Css Box model lesson Css-->
+<h3>Css Box model lesson Css</h3>
+<p>All html elements can be considered as boxes.</p>
+<h3>The Css Box model</h3>
+<p>In Css, the term "box model" is used when talking about design and layout.</p>
+<p>The Css box model is essentially a box that wraps around every html element. It consists of: margin, border, padding, and the actual content. The image below illustrates the box model: </p>
+<img src="/css/img/box_model.png" alt="navegator box model" type="img/png">
+<p>Explanation of the different parts:</p>
+<ul>
+  <li><b>Content</b> - The content of the box, where text and images appear.</li>
+  <li><b>Padding</b> - Clears an area around the content. The padding is transparent.</li>
+  <li><b>Border</b> - A border that goes around the padding and content.</li>
+  <li><b>Margin</b> - Clears an area outside the border. The margin is transparent.</li>
+</ul>
+<p>The box model allows us to add a border around elements, and define space between elements.</p>
+<h3>Example</h3>
+<p>Demostration of the box model:</p>
+<div class="box_model_class"></div>
+<h3>Width and Height of an Element</h3>
+<p>In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.</p>
+<mark><b>Important:</b> When you set the width and height properties of an element with CSS, you just set te width and height of the <b>content area</b>. To calculate the <em>full size</em> of an element, you must also add padding, borders and margins.</mark>
+</br>
+<h3>Example</h3>
+<p>This "id" element will have a total width of 350px:</p>
+<div id="id_element"></div>
+<p>Here is the calculation:</p>
+320px (width)</br>
++ 20px (left + right padding)</br>
++ 10px (left + right border)</br>
++ 0px (left + right margin)</br>
+= 350px</br>
+</br>
+<p>The total width of an element should be calculated like this:</p>
+<p>Total element width = width + left padding + right padding + left border + right border + left margin + right margin</p>
+<p>The total height of an element should be calculated like this:</p>
+<p>Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
+<p></p>
 </body>
 </html>
