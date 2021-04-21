@@ -191,3 +191,8 @@ h1 {
   color: paleturquoise;
 
 }
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(/css/img/border\ xete.png) 40 stretch;
+}
