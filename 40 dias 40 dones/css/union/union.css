@@ -9,12 +9,13 @@
     grid-template-columns: auto auto auto;
     background-color: #204868;
     padding: 10px;
+
 }
 .grid-element {
     background-color: rgba(248, 248, 248, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 30px;
+    font-size: 17px;
 }
 
 .flex-left {
@@ -67,3 +68,4 @@
   #info {background-color:rgb(10, 0, 190);}
   #form {background-color: rgb(10, 0, 190);}
   #logo {width: 200px}
+

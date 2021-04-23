@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paggrid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Doc</title>
+<html>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="subnav">
+          <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#company">Company</a>
+            <a href="#team">Team</a>
+            <a href="#careers">Careers</a>
+          </div>
+        </div> 
+        <div class="subnav">
+          <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#bring">Bring</a>
+            <a href="#deliver">Deliver</a>
+            <a href="#package">Package</a>
+            <a href="#express">Express</a>
+          </div>
+        </div> 
+        <div class="subnav">
+          <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+            <a href="#link4">Link 4</a>
+          </div>
+        </div>
+        <a href="#contact">Contact</a>
+      </div>
+      
+      <div style="padding:0 0px">
+        <div class="background-image-container">
+            <div class="textHero">LET'S CODER</div>
+        </div>
+        <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="/css/img/SLIDE0.jpeg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="/css/img/SLIDE1.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="/css/img/SLIDE2.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="/css/img/istockphoto-174926429-1024x1024.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="/css/img/monitor-1307227_960_720.webp" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="/css/img/abstract-1231889_960_720.jpg" style="width:100%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="/css/img/SLIDE0.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/css/img/SLIDE1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/css/img/SLIDE2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/css/img/istockphoto-174926429-1024x1024.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/css/img/monitor-1307227_960_720.webp" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="/css/img/abstract-1231889_960_720.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+            </div>
+          </div>
+          
+  
+    <div class="grid-container">
+    <div class="item1"> elemento </div>  
+    <div class="item2">imagenes</div>
+    <div class="item3">opciones</div>
+    <div class="item4">Texto principal</div>  
+    <div class="item5">opciones finales</div>
+  </div>
+  
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+</body>
+</html>
