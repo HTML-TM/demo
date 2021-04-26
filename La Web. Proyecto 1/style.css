@@ -50,6 +50,10 @@ h1 {
     left: 35.5%;
 }
 
+h2 {
+    text-align: center;
+}
+
 .contact_text {
     text-align: center;
 
@@ -64,19 +68,24 @@ button {
     
 }
 
+.columns {
+    column-count: 3;
+    text-align: center;
+    flex-wrap: wrap;
+}
 
-  .grid-container {
+.grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 80px 200px;
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
+    grid-row-gap: 0px;
+    grid-template-columns: auto auto auto auto;
+    background-color: #804747;
+    padding: 0px;
   }
   
-  .grid-container > div {
+  .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
     font-size: 30px;
+    text-align: center;
   }
