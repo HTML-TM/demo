@@ -6,13 +6,77 @@ body {
 
 }
 
-.nav { color:black ;background-color:rgb(185, 185, 185); text-decoration: none;}
+.nav { color:black ;background-color:rgb(185, 185, 185); text-decoration: none; margin: 0px; position: relative; left:25px; top: 35px;} 
 
-img {width: 13%;}
+
+#logo{
+    width: 13%;  
+    position: absolute;
+    position: center;
+    top: 8px;
+    left: 44%;}
+
+.img_mentores {
+    width: 238px;
+    border-radius: 50%;
+
+}
+
+#bg_img{
+    top: 50px;
+    background-attachment: fixed;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 100px;
+    object-position: center top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 370px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+  
+    
+
+}
+h1 {
+    position: absolute;
+    top: 160px;
+    color:black;
+    text-align: center;
+    font-size:80px;
+    left: 35.5%;
+}
+
+.contact_text {
+    text-align: center;
+
+}
+
 
 button { 
     box-shadow: 3px 3px;
     background-color: rgb(182, 182, 182); 
     width: 100px; 
-    padding: 4px;"
+    padding: 4px;
+    
 }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 200px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
