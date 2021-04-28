@@ -6,7 +6,16 @@ body {
 
 }
 
-.nav { color:black ;background-color:rgb(185, 185, 185); text-decoration: none; margin: 0px; position: relative; left:25px; top: 35px;} 
+.nav { 
+    color:black ;
+    background-color:rgb(185, 185, 185); 
+    text-decoration: none; 
+    margin: 0px; 
+    position: relative; 
+    left:25px; 
+    top: 35px;
+} 
+
 
 
 #logo{
@@ -17,41 +26,16 @@ body {
 
 
 
-/* .css_bg_image {
+.css_bg_image {
     background-image: url(/img/background-image.jpg);
-    background-image: url(../La web.Proyecto 1/img/background-image.jpg);
-    background-position-x: 100px;
-    background-position-y: 200px;
-} */
-
-#bg_img{
-    position: relative;
-    top: 50px;
+    height: 350px;
+    background-position-y: -420px;
+    background-repeat: no-repeat;
+    background-size: 1800px;
     margin-left: 25px;
     margin-right: 25px;
-    margin-bottom: 80px;
-    height: 370px;
-    
-    /* position: absolute; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-position-x: 600px;
-    background-position-y: 600px; */
-    /* background-origin: border-box; */
-
-    
-    
-    
 
 }
-
-
-.prueba { 
-    background-image: url('/img/background-image.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-  }
 
 
 
@@ -63,12 +47,11 @@ body {
 
 }
 h1 {
-    position: absolute;
-    top: 160px;
+    position:relative;
+    top: 120px;
     color:rgb(255, 255, 255);
     text-align: center;
     font-size:80px;
-    left: 35.5%;
 }
 
 h2 {
@@ -107,7 +90,7 @@ button {
 .grid-container {
     display: grid;
     grid-row-gap: 0px;
-    grid-template-columns: auto 50px 40px auto 120px auto;
+    grid-template-columns: auto 50px 40px 200px 120px auto;
     background-color: #ffffff;
     padding: 0px;
   }
