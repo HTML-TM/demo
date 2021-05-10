@@ -12,80 +12,88 @@
     <title>Home. Let's Coder</title>
 </head>
 <body>
-    <div class="header">
-        <a href="index.html" class="logo">/ets [oder</a>
-        <nav class="header-right">
-          <a class="active" href="index.html">Home</a>
-          <a href="conocenos.html">Conócenos</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
-      </div>
+  
+<!-- nav -->
+
+  <div class="grid_container">
+    <div class="grid_item">
+      <a class="nav_child2" href="index.html"><span class="nav_text_letscoder">/et's [oder </span></a>
+    </div>
+    <div class="grid_item2"> 
+      <a class="nav_child2" href="index.html"><span class="nav_style">Home</span></a>
+      <a class="nav_child2" href="conocenos.html"><span class="nav_style">Conócenos</span></a>
+      <a class="nav_child2" href="contacto.html"><span class="nav_style">Contacto</span></a>  
+      <a class="nav_child2" href="info.html"><span class="nav_style">Info</span></a>  
+      <a class="nav_child2" href="inscription.html"><span class="nav_style">Inscribirme</span></a>
+    </div>
+  </div>
+
+<!-- main section-->
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px" class="hero_fotolito">/et's [oder</h1>
+    <h1 class="hero_fotolito">/et's [oder</h1>
     <p>Consigue tu meta en la vida</p>
+    <button class="inscribirme"><a href="/inscription.html">Inscribirme</a></button>
   </div>
 </div>
-<!-- haremos flexbox -->
+<!-- inscription dates section  -->
 <main>
   <h2 id="home_Subtitle_Proximasfechas">Próximas fechas</h2>
-
-    <div class="row">
+    <div class="row"> 
       <div class="column">
         <div class="card">
-          <img src="/img/p2.jpeg" alt="Imagen Curso Full-time Online" style="width:100%">
+          <img src="/img/p2.jpeg" alt="Imagen Curso letscoder Full-time Online">
           <div class="container">
             <h2>25</h2>
             <p class="title">Lun & Enero</p>
             <p>Curso Full-Time</p>
             <p>Online</p>
-            <p><button class="button_curso-inscribirme">Inscribirme</button></p>
+            <p><button class="button_curso-inscribirme"><a href="/inscription.html">Inscribirme</a></button></p>
           </div>
         </div>
       </div>
     
       <div class="column">
         <div class="card">
-          <img src="/img/p1.jpg" alt="Imagen Curso Part-Time Online" style="width:100%">
+          <img src="/img/p1.jpg" alt="Imagen Curso Part-Time Online">
           <div class="container">
             <h2>28</h2>
             <p class="title">Jue & Enero</p>
             <p>Curso Part-Time</p>
             <p>Online</p>
-            <p><button class="button_curso-inscribirme">Inscribirme</button></p>
+            <p><button class="button_curso-inscribirme"><a href="/inscription.html">Inscribirme</a></button></p>
           </div>
         </div>
       </div>
 
       <div class="column">
         <div class="card">
-          <img src="/img/p3.jpeg" alt="Imagen Curso Full-time Planeta Marte" style="width:100%">
+          <img src="/img/p3.jpeg" alt="Imagen Curso Full-time Planeta Marte">
           <div class="container">
             <h2>3</h2>
             <p class="title"> Lun & Marzo</p>
             <p>Curso Full-Time</p>
             <p>Presencial</p>
-            <p><button class="button_curso-inscribirme">Inscribirme</button></p>
+            <p><button class="button_curso-inscribirme"><a href="/inscription.html">Inscribirme</a></button></p>
           </div>
         </div>
       </div>
       
       <div class="column">
         <div class="card">
-          <img src="/img/p5.jpeg" alt="Imagen Curso Full-time Abril Online" style="width:100%">
+          <img src="/img/p5.jpeg" alt="Imagen Curso Full-time Abril Online">
           <div class="container">
             <h2>26</h2>
             <p class="title">Lun & Abril</p>
             <p>Curso Full-Time</p>
             <p>Online</p>
-            <p><button class="button_curso-inscribirme">Inscribirme</button></p>
+            <p><button class="button_curso-inscribirme"><a href="/inscription.html">Inscribirme</a></button></p>
           </div>
         </div>
       </div>
     </div>
   </main>
-
-  
+<!-- Footer section -->  
     <div class="footer-clean">
       <footer>
           <div class="container">
@@ -114,7 +122,11 @@
                           <li><a href="#">Preguntas & Respuestas</a></li>
                       </ul>
                   </div>
-                  <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                  <div class="col-lg-3 item social">
+                    <a href="#"><i class="icon ion-social-facebook"></i></a>
+                    <a href="#"><i class="icon ion-social-twitter"></i></a>
+                    <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                    <a href="#"><i class="icon ion-social-instagram"></i></a>
                       <p class="copyright">/et's [oder © 2021</p>
                   </div>
               </div>
@@ -123,51 +135,6 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- <div class="grid-container">
-    <div class="grid-item0"></div>
-    <div class="grid-item1"><span class="negritaFecha">25</span></div>
-    <div class="grid-item2">Lun<br>Ene</div>
-    <div class="grid-item3"><span class="negrita">Curso Full-Time</span><br> Online</div>  
-    <div class="grid-item4"><button>Inscribirme</button></div>
-    <div class="grid-item0"></div>
-    <div class="grid-item0"></div>
-    <div class="grid-item1"><span class="negritaFecha">28</span></div>
-    <div class="grid-item2">Jue<br>Ene</div>  
-    <div class="grid-item3"><span class="negrita">Curso Part-Time</span><br> Online</div>
-    <div class="grid-item4"><button>Inscribirme</button></div>
-    <div class="grid-item0"></div>
-    <div class="grid-item0"></div>
-    <div class="grid-item1"><span class="negritaFecha">3</span></div> 
-    <div class="grid-item2">Lun<br>Mar</div>
-    <div class="grid-item3"><span class="negrita">Curso Full-Time</span><br> Planeta Marte</div>
-    <div class="grid-item4"><button>Inscribirme</button></div>   
-  </div> -->
-
-<!-- 
-    <p>25</p>
-    <p>Lun</p>
-    <p>Ene</p>
-    <p>Curso Full-Time</p>
-    <p>Online</p>
-    <button>Inscribirme</button>
-
-    
-    <p>28</p>
-    <p>Jue</p>
-    <p>Ene</p>
-    <p>Curso Part-Time</p>
-    <p>Online</p>
-    <button>Inscribirme</button>
-
-    
-    <p>3</p>
-    <p>Lun</p>
-    <p>Mar</p>
-    <p>Curso Full-Time</p>
-    <p>Planeta Marte</p>
-    <button>Inscribirme</button> -->
-    
 <script src="index.js"></script>
 </body>
 </html>

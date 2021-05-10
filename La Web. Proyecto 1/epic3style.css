@@ -1,15 +1,22 @@
 /* FONT */
+/* FLEX NAV */
 /* NAV */
-/* IMAG */
+/* Main background */
 /* COLUMNAS CONOCENOS */
 /* TEXTO */
 /* TABLA FECHAS */
+/* Cards */
 /* FLIPCARD */
 /* FORM */
 /* FOOTER */
+/* INFO PAGE */
 
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+  margin: 0px;
+}
 
 body {
 
@@ -20,105 +27,109 @@ body {
 main {
   width: 80%;
   margin: auto;
+  padding-bottom: 50px;
+ 
 
 }
+
+.main2 {
+
+    width: 60%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
 /* font */
 
-/* NAV */
-/* Style the header with a grey background and some padding */
-.header {
-    overflow: hidden;
-    background-color: #f1f1f1;
-    padding: 20px 10px;
-  }
-  
-  /* Style the header links */
-  .header a {
-    float: left;
-    color: #0a00cf;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-  }
-  
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: #ddd;
-    color: rgb(0, 0, 0);
-  }
-  
-  /* Style the active/current link*/
-  .header a.active {
-    background-color: #0a00cf;
-    color: white;
-  }
-  
-  /* Float the link section to the right */
-  .header-right {
-    float: right;
-  }
-  
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
-    }
-  }
-.logo {
-    color: blue;
+/* FLEX NAV */
+
+.nav_logo{
+ order:1
 
 }
-/* nav */
+.nav_parent{
+ display:flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ width: 81%;
+ margin-bottom: 36px;
+ margin-top: 36px;
+ text-decoration:none;
+ 
+
+}
+
+.nav_child2{
+  display:flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: baseline;
+ /* box-shadow:3px 3px 3px 1px rgba(0, 0, 0, 0.3); */
+ margin-left: 5px;
+}
 
 
-/* IMAG */
-/* BACKGROUND-IMAGE HERO */
+.nav_text_letscoder{
+  background-color: #eee;
+  color: #0a00cf; 
+  border-radius: 10px;
+  font-size:2vw;
+  font-weight: bold;
+  display: flex;
+
+}
+
+
+.nav_style{
+  background-color: #0a00cf; 
+  color: #eee; 
+  border-radius: 10px;
+  padding: 20px 24px;
+  font-size:3vw;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.nav_style:hover {
+  background-color: rgb(177, 54, 177);
+  
+}
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+
+/* FLEX NAV */
+
+
+/* Main background */
+
+* {
+  box-sizing: border-box;
+}
 body, html {
     height: 100%;
     margin: 0;
   }
   
-  * {
-    box-sizing: border-box;
-  }
-  
   .bg-image {
-    /* Full height */
     height: 50%;
-  
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
-  /* Images used */
+
   .img1 { background-image: url(/img/background-image.jpg); }
 
-  
-  /* Position text in the middle of the page/image */
   .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
     color: white;
     font-weight: bold;
     font-size: 80px;
     border: 10px solid #f1f1f1;
-    position: fixed; /* Stay fixed */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -154,23 +165,23 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
   }
-  
-  .hero-text button {
+
+  .hero-text .inscribirme {
     border: none;
     outline: 0;
     display: inline-block;
     padding: 10px 25px;
-    color: black;
-    background-color: #0a00cf;
+    color: #0a00cf;
+    background-color: #ddd;
     text-align: center;
     cursor: pointer;
   }
   
-  .hero-text button:hover {
+  .hero-text .inscribirme:hover {
     background-color: #0a00cf;
     color: white;
   }
-  
+
 /* background-image hero */
 /* image */
 
@@ -181,6 +192,29 @@ body, html {
   
 /* Columnas Conocenos */
 
+main {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.child1 {
+  display:flex;
+  justify-content: space-around;
+
+}
+.child2 {
+  display:flex;
+  justify-content: space-around;
+
+}
+.child3 {
+  display:flex;
+  justify-content: space-evenly;
+
+}
+
 .col-md-3 {
     margin-top: 10px
 }
@@ -190,11 +224,7 @@ body, html {
 
 }
 
-.columns {
-  column-count: 3;
-  text-align: center;
-  padding:100px;
-}
+
 .img_mentores {
   width: 200px;
   border-radius: 50%;
@@ -203,52 +233,45 @@ body, html {
 
 
 .column88 {
+  display: flex;
+  justify-content: space-evenly;
   box-sizing:border-box;
   float: left;
   width: 30%;
-  text-align: center;
+  /* text-align: center; */
   margin-left: 0px;
   
 }
 .column89 {
-  
-  float: left;
+  display:flex;
+  justify-content: center;
+  /* float: left; */
   width: 30%;
   text-align: center;
-  margin-left: 50px;;
   
 }
 
 .columnLl {
-  float: left;
   width: 33.33%;
   text-align: center;
   margin-left: 0px;
 }
 
 .columnFs {
-  float: left;
   width: 33.33%;
   text-align: center;
-  margin-left: -7px;
 }
 .columnAa {
-  float: left;
   width: 33.33%;
   text-align: center;
-  margin-left: 7px;
 }
 
 .columnDescription {
-  float: left;
-  width: 33.33%;
+  width: 30%;
   text-align: center;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
+.child1:after {
   clear: both;
 }
 
@@ -266,6 +289,8 @@ font-size: x-large;
 
 }
 
+
+
 .hero-text button {
   border: none;
   outline: 0;
@@ -282,10 +307,9 @@ font-size: x-large;
   color: white;
 }
 
-/* .hero_fotolito {
- background-color: #ddd;
- color:black;
-} */
+.hero_fotolito {
+  font-size:50px;
+}
 
 
 /* TABLA DE FECHAS */
@@ -307,6 +331,9 @@ html {
   width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
+  display:flex;
+  width: 25%;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 650px) {
@@ -316,7 +343,10 @@ html {
   }
 }
 
+/* Cards */
+
 .card {
+  width:100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -327,7 +357,10 @@ html {
 .container::after, .row::after {
   content: "";
   clear: both;
-  display: table;
+}
+
+.header2_conocenos {
+  padding: 36px;
 }
 
 .title {
@@ -351,13 +384,6 @@ html {
 }
 /* tabla de fechas */
 
-/* TABLA DE FECHAS 2 */
-
-
-/* tabla de fechas 2 */
-
-
-
 
 
 /* FLIPCARD */
@@ -368,7 +394,6 @@ html {
   height: 200px;
   perspective: 1000px;
   border-radius: 50%;
-  margin-left: 120px;
 }
 
 .flip-card-inner {
@@ -406,6 +431,12 @@ html {
   color: white;
   transform: rotateY(180deg);
 } 
+
+
+.contact_space {
+  margin-bottom: 140px;
+
+}
 
 /* FOOTER */
 
@@ -476,6 +507,13 @@ html {
   opacity:0.9;
 }
 
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
 @media (max-width:991px) {
   .footer-clean .item.social > a {
     margin-top:40px;
@@ -488,13 +526,460 @@ html {
   }
 }
 
-.footer-clean .copyright {
-  margin-top:14px;
-  margin-bottom:0;
-  font-size:13px;
-  opacity:0.6;
-}
+
 /* footer */
 
+/* INFO PAGE */
+.table_heading{
+  text-align: center;
+  padding: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #ddd;
+  background-color:rgb(255, 255, 255);
+  border-spacing: 0;
+}
+
+td, th {
+  border: 1px solid #63636300;
+  text-align: left;
+  padding: 16px;
+  color:rgb(41, 41, 41);
+  border-collapse: collapse;
+  font-size: 12px;
+}
+th {
+  background-color: rgb(255, 255, 255);
+}
+
+tr:nth-child(2n+0) {
+  font-size: 12px;
+  color: #202020;
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #868686; 
+  color:black;
+  border: 2px solid black;
+}
 
 
+
+/* info text */
+.container_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.item_info_1 {
+ align-self: center;
+}
+
+
+.info_h2 {
+  text-align:center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+li::marker {
+  list-style: none;
+  list-style-type:none;
+}
+
+/* FORM */
+
+.container_form {
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.item_form2 {
+margin-left: 6px;
+margin-right: 10px;
+}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: initial;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: #0a00cfe7;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+
+input[type=text], select, input[type=number], input[type=tel], input[type=email] {
+  width: 99%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(10, 0, 207);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #0a00cf;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.padre {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.hijo {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.column_child {
+  display: flex;
+  flex-direction: row;
+  column-count: 2;
+  list-style-type: none;
+  justify-content: center;
+ }
+
+.date_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.parent_column .column_child{
+  display:flex;
+  flex-direction: row;
+}
+
+.margin_info {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.text_form_margin {
+  margin-right: 15px;
+}
+
+a .enviar:link{
+  color:white
+}
+
+/* Felicidades Notification */
+
+
+.image-container {
+  background-image: url("/img/fel.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
+
+.textcut {
+  background-color: white;
+  color: black;
+  font-size: 10vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+
+.volver {
+  font-size: 16px;
+  margin-top: 200%;
+
+}
+
+
+/* SmartPhone */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(221, 221, 221);
+    font-size:2vw;
+  }
+
+
+  .grid_container {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+   }
+   
+/*    
+   .grid_item {
+     grid-column-start: 3;
+     grid-row-start: 3;
+     display: flex;
+     flex-wrap: nowrap; */
+   /* }
+   .grid_item2 {
+     display: flex;
+     grid-column-start: 2;
+     grid-row-start: 2; */
+
+   }
+.nav_style {
+  width: 50px;
+}
+
+
+
+
+
+/* FLIPCARD */
+
+.flip-card {
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  perspective: 1000px;
+  border-radius: 50%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.flip-card-front {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #0a00cf;
+  color: white;
+  transform: rotateY(180deg);
+} 
+
+
+.contact_space {
+  margin-bottom: 10px;
+
+}
+
+
+
+.nav_parent{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 81%;
+  margin-bottom: 36px;
+  margin-top: 36px;
+  text-decoration:none;
+  
+  
+  }
+  
+  .nav_child2{
+    display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-left: 5px;
+  }
+  
+  
+  .nav_text_letscoder{
+    background-color: #eee;
+    color: #0a00cf; 
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+  
+  }
+  
+  
+  .nav_style{
+    background-color: #0a00cf; 
+    color: #eee; 
+    border-radius: 10px;
+    padding: 12px 50px;
+    font-size: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  
+  .nav_style:hover {
+    background-color: rgb(177, 54, 177);
+    
+  }
+  a:link, a:visited, a:active {
+    text-decoration:none;
+  }
+  
+  
+  .grid_container {
+  
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  }
+  
+  .grid_item {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .grid_item2 {
+    display: flex;
+    grid-column-start: 4;
+    grid-row-start: 2;
+  }
+  
+.info_h2 {
+  text-align:center;
+}
+
+.map {
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ padding: 50px;
+}
+
+.text_map {
+  text-align: center;
+  padding: 50px;
+ margin-top: 25px;
+}
+
+.columnDescription {
+padding:20px;
+
+}
+
+.padre_nombre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.hijo_nombre {
+display: flex;
+flex-wrap: wrap;
+margin-right: 10px;
+}
+
+.padre_poblacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hijo_poblacion {
+  display: flex;
+flex-wrap: wrap;
+margin-right: 10px;
+
+}
+
+#cp {
+  width: 90%;
+}
+#tel {
+  width: 100%;
+}
+@media only screen and (orientation: landscape) {
+  
+} 
