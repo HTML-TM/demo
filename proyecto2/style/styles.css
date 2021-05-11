@@ -24,3 +24,10 @@ h3 {
 .resultadodatos {
   text-align: center;
 }
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
